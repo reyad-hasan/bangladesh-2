@@ -12,7 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- tailwind cdn link -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind customize script -->
     <script>
         tailwind.config = {
@@ -37,7 +38,42 @@
 </head>
 
 <body class="fira-sans">
-<h1 class="">hello </h1>
+    <main class="max-w-screen-xl mx-auto px-5 md:px-10 lg:px-20">
+        <header class="mt-5 md:mt-10">
+            <!-- nav container -->
+            <nav class="flex items-center justify-between">
+                <!-- logo -->
+                <div>
+                    <a href="#" class="text-xl md:text-2xl lg:text-3xl font-medium text-b-black">Bangladesh 2.0</a>
+                </div>
+                <!-- sign in -->
+                <div>
+                    <button
+                        class="border border-b-green text-b-green py-1 px-2 lg:py-2 lg:px-5 rounded-md hover:bg-b-green hover:text-white">Sign
+                        In</button>
+                </div>
+            </nav>
+            <!-- hero section -->
+            <section class="bg-b-header-bg p-3 md:px-10 md:py-14 rounded-lg mt-5 md:mt-10 lg:flex">
+                <!-- hero left container -->
+                <div class="flex-1 flex justify-center items-center">
+                    <div>
+                        <h3 class="text-xl lg:text-2xl text-b-h-des">Bangladesh 2.0</h3>
+                        <h1 class="text-2xl md:text-4xl font-bold text-b-black md:w-3/4 mt-1 mb-5">Idea , innovation ,
+                            vision and
+                            challenges in New Bangladesh.</h1>
+                        <button
+                            class="px-4 py-2 bg-b-green rounded-md text-white text-sm hover:bg-white hover:text-b-green border-[1px] hover:border-b-green">Explore
+                            New Bangladesh</button>
+                    </div>
+                </div>
+                <!-- hero right container -->
+                <div class="flex-1 flex justify-center items-center mt-12">
+                    <img class="lg:w-3/4" src="./assets/hero.png" alt="hero right photo">
+                </div>
+            </section>
+        </header>
+    </main>
 </body>
 
 </html>
